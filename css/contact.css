@@ -1,0 +1,300 @@
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body::before{
+        position: fixed;
+        left: 0;
+        top: 0;
+        content:"";
+        display:block;
+        opacity:1;
+      
+        /*background-image: url(../image/bg2.jpg)no-repeat center center fixed;
+        background-size: cover;*/
+        background-image: url(../image/kelli-tungay-RAVdOqWXPvg-unsplash.jpg);
+      
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+        height: 150vh;
+        width: 100vw;
+        z-index: -1;
+     }
+body{
+margin:0;
+padding:0;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 20px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+flex-direction: column;
+display:flex;
+flex-wrap: wrap;
+}
+header{
+    display:flex;
+    
+     flex-direction: row;
+     justify-content: space-around;
+    background-color: rgb(8, 0, 1);
+    color:white;
+
+}
+header h1{
+    font-size: 30px;
+    color:white;
+    font-family: 'Lobster', 'cursive';
+    letter-spacing: 2px;
+    margin-top:10px;
+}
+header span{
+    color:white;
+    text-decoration:white;
+    text-decoration-style: double;
+}
+header nav ul{
+    display:flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    list-style-type: none;
+
+}
+header nav ul li{
+    margin:20px;
+    flex:1 1 auto;
+    margin-top:10px;
+    margin-bottom: 3px;
+    font-size:17.3px;
+    padding:5px;
+}
+header a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Lobster', cursive;
+    position:relative;
+
+}
+header a::after{
+content:"";
+position:absolute;
+color:white;
+left:0;
+bottom:0;
+width:100%;
+height:2px;
+background-color: cornsilk;
+transform:scaleX(0);
+transform-origin:right;
+transition:transform 250ms ease-in;
+
+}
+header a:hover{
+    color:white;
+}
+header a:hover::after{
+transform:scaleX(1);
+transform-origin:left;
+color:white
+
+}
+/*contact details and image*/
+  main  section{
+    background-image: linear-gradient(to bottom,rgb(253, 253, 253) ,rgb(253, 253, 253));
+    border-radius: 20px;
+    margin-top: 10px;
+    margin:20px;
+    padding:10px;
+    
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+/* heading*/
+main  h1{
+    font-family: 'Kaushan Script', cursive;
+    background-color:white;
+    border:5px solid rgb(6, 86, 177);
+    padding:15px;
+    text-align: center;
+    margin:0;
+  }
+  main section address{
+      padding:30px;
+    text-align: left;    
+    font-style: italic;
+  }
+  main section blockquote{
+margin-left: 52px;
+  }
+  main section img{
+      width:500px;
+      height:auto;
+  }
+  /*Contact form section .For eliminate problem iadded div tag*/
+main+div{
+    background: linear-gradient(to right,rgba(2, 2, 90, 0.5),rgba(233, 233, 236, 0.171)),url('../image/elena-putina-GikotQ_Gkzw-unsplash.jpg');
+    background-size: cover;
+    background-position:center ;
+  
+}
+div{
+    width:700px;
+    
+    margin:0 auto;
+    border:1px solid black;
+    margin-bottom:90px;
+    
+    
+}
+/*heading*/
+div h2{
+    font-family: 'Kaushan Script', cursive;
+    color:red;
+    padding:15px;
+    text-align: center;
+    font-size:45px;
+    margin:0;
+  }
+  /**/
+
+  .form input{
+      width:200px;
+      padding:10px;
+      color:#666;
+      outline: none;
+      font-size:16px;
+      margin-left:50px;
+      border-radius: 12px;
+    
+  }
+   /**/
+  #e input{
+    margin-left:57px;
+  }
+   /*input radio class */
+  .gender input{
+      width:50px;
+      margin-left:40px;
+      
+  }
+  .gender{
+    margin:20px;
+    font-size: 20px;
+    color:white;
+    margin-right:40px;
+
+  }
+   /*for location select options*/
+  .location{
+    margin:30px;
+    font-size: 20px;
+    color:white;
+  }
+ /*Labels for the input*/
+label{
+    margin:30px;
+    font-size: 20px;
+    color:white;
+}
+ /*password id*/
+#p label{
+    margin-left:7px;
+}
+#p input{
+    margin-left:15px;
+}
+/*text area*/
+.msg textarea{
+margin-left:120px;
+border-radius: 10px;
+}
+.location select{
+    width:200px;
+    padding:10px;
+    margin-left:110px;
+    border-radius: 12px;
+}
+.location label{
+    margin-left:50px;
+} /*submit input*/
+.sub input{
+    width:100px;
+    padding:10px;
+    background-color: crimson;
+    color:white;
+    font-weight: bold;
+    margin:20px;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+.sub input:hover{
+    background-color: coral;
+
+}
+ /*form width*/
+form{
+    width:100%;
+    margin-top:50px;
+    transition:all 4s ease-in-out;
+     
+    }
+form p{
+ margin:4px;
+}
+script+a{
+    font-size: 25px;
+}
+.nexticons i{
+    font-size: 40px;
+    float :left;
+}
+ /*footer section*/
+footer{
+    background-color: black;
+   color:white;
+   
+   
+ }
+
+ footer a i{
+ 
+    padding:11px;
+    background-color: rgb(8, 57, 112);
+    border-radius: 50px;
+    
+    
+}
+footer a i:hover{
+    background-color: white;
+     border:1px solid rgb(49, 119, 199);
+     transition:.8s linear;
+     color:rgb(8, 57, 112);
+}
+ footer ul{
+     list-style-type: none;
+     display:flex;
+     flex-direction: row;
+     
+     justify-content:center;
+ 
+ }
+ footer li{
+    margin:20px;
+ 
+ }
+ footer  a{
+     text-decoration: none;
+     color:white;
+ }

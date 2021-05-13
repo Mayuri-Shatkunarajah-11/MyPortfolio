@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!--Css style-->
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <!--Khausan font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <!-- Icons library -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <!--header with navigations-->
+  <header>
+    <h1>Mayuri Shatkunarajah</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="work.html">Experience</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <!--<li><a href="skill.html">Blogs</a></li>-->
+        <li><a href="hobbies.html">My Hobbies</a></li>
+        <li><a href="contact.html">Contact Me </a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--Contact details-->
+  <main>
+    <h1> Contact Details</h1>
+    <section>
+      <address style="font-size:23px;">
+        <i class="bi bi-person-lines-fill"></i>
+        Address: Wyde 20,Birr,Argau.<br><br>
+        <i class="bi bi-envelope"></i>Email:mayusch17@gmail.com.<br><br>
+        <blockquote> :mayuri.shatkunarajah@powercoders.org.</blockquote><br>
+        <i class="bi bi-telephone-fill"></i>PhoneNo: 0783298123<br><br>
+        <i class="bi bi-linkedin"></i>LinkedIn:<a
+          href="http:www.linkedin.com/in/mayuri-shatkunarajah-11">http://www.linkedin.com/in/mayuri-shatkunarajah </a>
+        <br><br>
+        <i class="bi-github" role="img" aria-label="GitHub"></i>
+        Github: <a
+          href="https://github.com/Mayuri-Shatkunarajah-11">https://github.com/Mayuri-Shatkunarajah-11</a><br><br>
+          <i class="bi bi-recycle"></i> Replit: <a href="https://replit.com/@MayuriShatkunar">https://replit.com/@MayuriShatkunar</a>
+      </address>
+      <img src="image/IMG_E2004.jpg" alt="my photo">
+    </section>
+  </main>
+  <!--Contact form-->
+  <div>
+    <h2>Contact Form</h2>
+    <form action="skill.html" onsubmit=" return validate()" target="_blank" method="post">
+      <fieldset>
+
+        <p class="form"> <label for="">First Name</label>
+          <input type="text" name="fname" id="fname" placeholder="shayu" required validate>
+        </p>
+        <p class="form"><label for="">Last Name</label>
+          <input type="text" name="lname" id="lname" placeholder="kuna" required>
+        </p>
+        <p class="form" id="e"><label for="email1">Email-ID</label>
+          <input type="email" name="email1" id="email1" required placeholder="myemail12@gmail.com" validate>
+        </p>
+        <p class="form"><label for="phoneno">Phone No</label>
+          <input type="tel" name="phone" id="phone">
+        </p>
+        <p class="form"> <label for="pass">Password</label>
+          <input type="password" name="pass" id="pass" required>
+        </p>
+        <p class="form" id="p"><label for="pass">Confirm Password</label>
+          <input type="password" name="pass" id="pass" required>
+        </p>
+        <p class="gender">Gender
+          <input type="radio" name="male" id="male" value="male">Male
+          <input type="radio" name="female" id="female" value="female" checked>Female
+
+        </p>
+        <p class="location">
+          Location
+          <select name="" id="">
+            <option value="Switzerland" checked>Switzerland</option>
+            <option value="Italy">Italy</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+          </select>
+        </p>
+        <p class="msg">
+
+          <textarea name="" id="txt" cols="30" rows="10" placeholder="Write your message"></textarea>
+        </p>
+        <p class="sub"><input type="submit" value="submit"></p>
+      </fieldset>
+    </form>
+ 
+  </div>
+  <script src="form.js"></script>
+  <!--footer-->
+  <a href="#top">Go top</a>
+  <a href="hobbies.html" class="nexticons"><i class="bi bi-arrow-left-circle"></i></a>
+  <footer>
+    <!--Links for all social websites-->
+    <ul>
+      <li><a href="http://www.linkedIn.com"><i class="bi bi-linkedin"></i></a></li>
+            <li><a href="http://www.udemy.com"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="hhtp://www.w3school.com"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="http://www.github.com"><i class="bi bi-github"></i></a></li>
+            <li><a href="http://www.youtube.com"><i class="bi bi-youtube"></i></a></li>
+    </ul>
+    <p>&copy All copyrights Reserved .Designed by Mayuri.</p>
+  </footer>
+</body>
+
+</html>
